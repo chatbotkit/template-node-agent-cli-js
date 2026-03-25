@@ -1,0 +1,21 @@
+{
+  "name": "template-node-agent-cli-js",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "agent": "node src/index.js"
+  },
+  "dependencies": {
+    "@chatbotkit/agent": "^1.29.0",
+    "@chatbotkit/sdk": "^1.29.0",
+    "commander": "^13.1.0",
+    "dotenv": "^16.4.5",
+    "zod": "^3.24.4"
+  }
+}
