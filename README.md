@@ -2,13 +2,11 @@
 
 A standalone command-line AI agent template that uses the ChatBotKit Agent SDK to run bespoke agents with built-in tools for file manipulation, code editing, and shell command execution.
 
-## Why ChatBotKit Agent SDK?
+## Why ChatBotKit?
 
-Instead of wiring up raw LLM API calls and building tool execution loops from scratch, this template uses `@chatbotkit/agent` which provides:
+Building a capable AI agent typically means sourcing models, setting up tool execution, managing state, and handling all the plumbing yourself. The cost adds up fast - not just in money, but in engineering time.
 
-- **Agentic execution loop** - Automatic multi-iteration tool-calling with planning, progress tracking, and controlled exit
-- **Built-in tools** - Read, write, edit files, and execute shell commands out of the box
-- **Platform integration** - Optionally connect to ChatBotKit platform bots for managed capabilities
+ChatBotKit brings models, tools, conversation management, and more into one platform. This template gets you started with a working CLI agent that includes built-in tools, multi-iteration execution, and optional platform integration out of the box.
 
 ## Features
 
