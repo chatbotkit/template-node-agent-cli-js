@@ -2,6 +2,8 @@
 
 A standalone command-line AI agent template that uses the ChatBotKit Agent SDK to run bespoke agents with built-in tools for file manipulation, code editing, and shell command execution.
 
+> **Note:** This template is deliberately bare-bones. It provides the minimal structure and wiring needed to get a working app, intentionally leaving styling, layout, and architectural choices open so you can build on top without fighting existing opinions.
+
 ## Why ChatBotKit?
 
 Building a capable AI agent typically means sourcing models, setting up tool execution, managing state, and handling all the plumbing yourself. The cost adds up fast - not just in money, but in engineering time.
@@ -33,6 +35,7 @@ npm install
 # Configure environment
 cp .env.example .env
 # Edit .env and add your CHATBOTKIT_API_SECRET
+# (get a token from https://chatbotkit.com/tokens)
 
 # Run the agent
 node src/index.js "List all JavaScript files in the current directory"
@@ -65,14 +68,14 @@ node src/index.js "List files" | jq .
 
 ### CLI Options
 
-| Option                     | Description                          |
-| -------------------------- | ------------------------------------ |
-| `-a, --agent <path>`       | Path to an agent markdown file       |
-| `-m, --model <model>`      | Model to use (default: `gpt-4o`)     |
-| `-b, --bot <id>`           | Use a ChatBotKit bot by ID           |
-| `-i, --max-iterations <n>` | Maximum iterations (default: 100)    |
-| `--no-builtin-tools`       | Disable built-in file and exec tools |
-| `-d, --debug`              | Print raw stream events to stderr    |
+| Option                     | Description                            |
+| -------------------------- | -------------------------------------- |
+| `-a, --agent <path>`       | Path to an agent markdown file         |
+| `-m, --model <model>`      | Model to use (default: `gpt-5.4-mini`) |
+| `-b, --bot <id>`           | Use a ChatBotKit bot by ID             |
+| `-i, --max-iterations <n>` | Maximum iterations (default: 100)      |
+| `--no-builtin-tools`       | Disable built-in file and exec tools   |
+| `-d, --debug`              | Print raw stream events to stderr      |
 
 ## Project Structure
 

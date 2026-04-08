@@ -29,7 +29,7 @@ const program = new Command()
   .description('Run a bespoke AI agent from the command line')
   .argument('<prompt>', 'The task or prompt for the agent to execute')
   .option('-a, --agent <path>', 'Path to an agent markdown file')
-  .option('-m, --model <model>', 'Model to use', 'gpt-4o')
+  .option('-m, --model <model>', 'Model to use', 'gpt-5.4-mini')
   .option('-b, --bot <id>', 'Use a ChatBotKit bot by ID')
   .option(
     '-i, --max-iterations <n>',
