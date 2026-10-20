@@ -34,7 +34,7 @@ npm install
 
 # Configure environment
 cp .env.example .env
-# Edit .env and add your CHATBOTKIT_API_SECRET
+# Edit .env and add your CHATBOTKIT_API_TOKEN
 # (get a token from https://chatbotkit.com/tokens)
 
 # Run the agent
@@ -116,7 +116,7 @@ export const customTools = {
 
 | Variable                | Required | Description               |
 | ----------------------- | -------- | ------------------------- |
-| `CHATBOTKIT_API_SECRET` | Yes      | Your ChatBotKit API token |
+| `CHATBOTKIT_API_TOKEN` | Yes      | Your ChatBotKit API token |
 
 ## License
 
