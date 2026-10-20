@@ -11,11 +11,11 @@ import { ChatBotKit } from '@chatbotkit/sdk'
 import { Command } from 'commander'
 
 function getClient() {
-  const secret = process.env.CHATBOTKIT_API_SECRET
+  const secret = process.env.CHATBOTKIT_API_TOKEN
 
   if (!secret) {
     console.error(
-      'Error: CHATBOTKIT_API_SECRET is not set. Copy .env.example to .env and add your token.'
+      'Error: CHATBOTKIT_API_TOKEN is not set. Copy .env.example to .env and add your token.'
     )
 
     process.exit(1)
